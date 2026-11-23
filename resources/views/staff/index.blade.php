@@ -8,10 +8,23 @@
     <div class="section-head"><div><p class="eyebrow">TEAM</p><h2>Staff members</h2></div></div>
     <div class="table-card">
         <table>
-            <thead><tr><th>Name</th><th>Username</th><th>Joined</th><th></th></tr></thead>
+            <thead><tr><th>Avatar</th><th>Name</th><th>Username</th><th>Joined</th><th></th></tr></thead>
             <tbody>
                 @forelse ($staff as $member)
                     <tr>
+                        <td>
+                            @if ($member->avatar)
+                                <img
+                                    class="table-avatar"
+                                    src="{{ str_starts_with($member->avatar, 'images/avatars/') ? asset($member->avatar) : asset('storage/' . $member->avatar) }}"
+                                    alt="{{ $member->full_name }} avatar"
+                                >
+                            @else
+                                <span class="table-avatar table-avatar-placeholder" aria-label="No avatar">
+                                    {{ strtoupper(substr($member->full_name, 0, 1)) }}
+                                </span>
+                            @endif
+                        </td>
                         <td><strong>{{ $member->full_name }}</strong></td>
                         <td>{{ '@' . $member->username }}</td>
                         <td>{{ $member->created_at?->format('d M Y') }}</td>
@@ -24,7 +37,7 @@
                         </td>
                     </tr>
                 @empty
-                    <tr><td colspan="4" class="empty">No staff members yet.</td></tr>
+                    <tr><td colspan="5" class="empty">No staff members yet.</td></tr>
                 @endforelse
             </tbody>
         </table>
