@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 23, 2026 at 02:00 AM
+-- Generation Time: Nov 25, 2026 at 03:17 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -149,10 +149,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `full_name`, `password`, `avatar`, `created_at`) VALUES
-(1, 'zyril', 'John Zyril Paco', '$2y$12$WH0wonFZvIn0vCAPIpqrruaHtiq2qoXAmH6zuhuTSYmL72U3ZsEna', NULL, '2026-11-23 00:20:28'),
-(2, 'kyle', 'Kyle Sarangay', '$2y$12$6c0k2JGhoECAUendpPRBrey2WDsRNB33RKaZ0nHcVdbIOXqgpldKC', NULL, '2026-11-23 00:20:28'),
-(3, 'seth', 'Seth John Lloyd Biala', '$2y$12$mTUmMgL8XwPx4vEUTNPo8uHlNNXoimECpttj.U0RSmzNIe4dnYvha', NULL, '2026-11-23 00:20:28'),
-(4, 'johann', 'Johann Abion', '$2y$12$w3pDwdLXkR2RRFCDX3ZIZOlGFNb3q3xSgZsX/ueBH3kHYKZ5tn4X.', NULL, '2026-11-23 00:20:28');
+(1, 'zyril', 'John Zyril Paco', '$2y$12$WH0wonFZvIn0vCAPIpqrruaHtiq2qoXAmH6zuhuTSYmL72U3ZsEna', 'images/avatars/Qna1KxHYfyWfoyS2QIuRIXcjoDnYabtuBmeVq9Jf.jpg', '2026-11-23 00:20:28'),
+(2, 'kyle', 'Kyle Sarangay', '$2y$12$6c0k2JGhoECAUendpPRBrey2WDsRNB33RKaZ0nHcVdbIOXqgpldKC', 'images/avatars/BZDSYSYOSbgAgOCZYArSnsbyrl1vs92m4ABJ4ix8.png', '2026-11-23 00:20:28'),
+(3, 'seth', 'Seth John Lloyd Biala', '$2y$12$mTUmMgL8XwPx4vEUTNPo8uHlNNXoimECpttj.U0RSmzNIe4dnYvha', 'images/avatars/VKIYbAwE1ahsSJl5cRKPHaNRgLkVdd4CrCqeJAAI.png', '2026-11-23 00:20:28'),
+(4, 'johann', 'Johann Abion', '$2y$12$w3pDwdLXkR2RRFCDX3ZIZOlGFNb3q3xSgZsX/ueBH3kHYKZ5tn4X.', 'images/avatars/vGE5ODHu6eEKl8haGKCJuArjl3nWm3VtBojvh4MN.png', '2026-11-23 00:20:28');
 
 --
 -- Indexes for dumped tables
